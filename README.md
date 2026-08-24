@@ -74,12 +74,3 @@ Metrics: [`results/foc_results.txt`](results/foc_results.txt).
 cd 01_PMSM_FOC
 pmsm_foc_main
 ```
-
-## What this proves (resume bullets)
-
-- Implemented a complete **Field-Oriented Control** drive for a PMSM (Clarke/Park
-  transforms, cascaded current + speed PI loops, cross-coupling decoupling) from first
-  principles in MATLAB.
-- Demonstrated the core FOC result — **flux/torque decoupling** (id=0, iq=torque) — plus
-  disturbance rejection to a load-torque step.
-- Designed the current and speed PI loops by **pole-placement / bandwidth** specification.
