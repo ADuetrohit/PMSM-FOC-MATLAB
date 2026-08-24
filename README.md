@@ -18,3 +18,13 @@ an AC motor behave like an easily-controlled DC motor by regulating current in t
 - **id → 0**  : no flux-weakening, so all stator current produces torque
 - **iq → torque** : commanded by the outer speed loop
 - **decoupling feedforward** cancels the ω·L cross-coupling between the d and q axes
+
+## Motor & control parameters
+
+| | |
+|---|---|
+| Rs, Ld=Lq, ψm | 0.5 Ω, 4 mH, 0.10 Wb |
+| Pole pairs, J, B | 4, 1×10⁻³ kg·m², 5×10⁻⁴ N·m·s |
+| Current-loop bandwidth | 300 Hz |
+| Speed-loop bandwidth | 15 Hz |
+| Test | step to 1500 rpm, then 2 N·m load at 180 ms |
