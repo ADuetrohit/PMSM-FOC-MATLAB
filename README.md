@@ -60,3 +60,26 @@ Electromagnetic torque `Te = 1.5·P·ψm·iq` tracks the load: a large transient
 the inertia, then settling to match the applied 2 N·m.
 
 Metrics: [`results/foc_results.txt`](results/foc_results.txt).
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `pmsm_foc_main.m` | Full FOC drive: motor model, Clarke/Park, PI loops, figures |
+| `images/*.png` | 5 figures (dashboard + 4 detail plots) |
+| `results/foc_results.txt` | Settling time, steady-state currents, load dip |
+
+## How to run
+```matlab
+cd 01_PMSM_FOC
+pmsm_foc_main
+```
+
+## What this proves (resume bullets)
+
+- Implemented a complete **Field-Oriented Control** drive for a PMSM (Clarke/Park
+  transforms, cascaded current + speed PI loops, cross-coupling decoupling) from first
+  principles in MATLAB.
+- Demonstrated the core FOC result — **flux/torque decoupling** (id=0, iq=torque) — plus
+  disturbance rejection to a load-torque step.
+- Designed the current and speed PI loops by **pole-placement / bandwidth** specification.
