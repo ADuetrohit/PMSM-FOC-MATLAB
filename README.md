@@ -1,4 +1,4 @@
-# Project 1 — PMSM Field-Oriented Control (FOC)
+# PMSM Field-Oriented Control (FOC)
 
 A complete **Field-Oriented Control** drive for a Permanent-Magnet Synchronous Motor,
 built from the motor's differential equations up in **base MATLAB**. FOC is the control
