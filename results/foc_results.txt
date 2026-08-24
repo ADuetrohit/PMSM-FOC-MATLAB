@@ -1,0 +1,10 @@
+PMSM Field-Oriented Control (base MATLAB)
+
+Motor: Rs=0.50 ohm  Ld=Lq=4.0 mH  psi_m=0.100 Wb  P=4  J=1.0e-03
+Control: current-loop BW=300 Hz, speed-loop BW=15 Hz
+
+Speed step 0 -> 1500 rpm:
+  2%% settling time        = 35.3 ms
+  steady-state i_d          = 0.000 A  (target 0)
+  i_q at 2 N.m load         = 3.622 A  (expected Te/Kt=3.333)
+  speed dip at load step    = 157.1 rpm
